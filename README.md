@@ -31,12 +31,17 @@ $ open http://localhost:8083
 > ex) $ docker stop e78
 
 ```bash
-# 실행 중인 도커 컨테이너를 조회 $ docker ps -a 
-# 컨테이너 로그 조회 $ docker logs (-f) {container id} 
- # 특정 컨테이너를 stop
+# 실행 중인 도커 컨테이너를 조회 
+$ docker ps -a 
+
+# 컨테이너 로그 조회 
+$ docker logs (-f) {container id} 
+ 
+# 특정 컨테이너를 stop
 $ docker stop {container id}
 
-# stop된 컨테이너를 다시 시작 $ docker start {container id}
+# stop된 컨테이너를 다시 시작 
+$ docker start {container id}
 
 # 특정 컨테이너를 삭제
 $ docker rm {container id}
@@ -74,6 +79,9 @@ $ docker exec -it mysql mysql -h localhost -uroot
 # docker-compose로 워드프레스 띄우기
 ```bash
 $ vi docker-compose.yml
+```
+
+```yaml
 version: '3.3'
 
 services:
@@ -101,7 +109,9 @@ services:
        WORDPRESS_DB_PASSWORD: wordpress
 volumes:
     db_data: {}
+```
 
+```bash
 $ docker-compose up -d
 $ open http://localhost:8000
 $ docker-compose down
