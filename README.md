@@ -129,7 +129,8 @@ EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 
 $ docker build -t asbubam/my_nginx:0.1 .
-$ docker run -d -p 80:80 --name nginx asbubam/my_nginx:0.1 $ open http://localhost:80
+$ docker run -d -p 80:80 --name nginx asbubam/my_nginx:0.1 
+$ open http://localhost:80
 
 # dockerhub 내 계정 public repo에 push 한다면...
 $ docker push asbubam/my_nginx:0.1
