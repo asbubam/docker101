@@ -5,9 +5,9 @@
 [<img src="img/docker101.png" width="400px">](https://drive.google.com/file/d/1YFkrxL4qX2112li_2YXMUPfK5c9VrJRQ/view?fbclid=IwAR3JPK1zfO_0qRrswM1ACpeiDAtFIdHCz3JQLyz6-TXlh9hkhx2V3Tf_Cz4)
 
 # Docker for Mac 다운로드 및 설치
-```bash
-$ wget https://download.docker.com/mac/stable/Docker.dmg
-```
+[맥 사용자](https://docs.docker.com/desktop/install/mac-install/)  
+[윈도우 사용자](https://docs.docker.com/desktop/install/windows-install/)  
+[리눅스 사용자](https://docs.docker.com/desktop/install/linux-install/)  
 
 # docker 설치 확인
 ```bash
